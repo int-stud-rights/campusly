@@ -449,21 +449,6 @@
       font-size: 21px;
     }
 
-    .category-card:nth-child(2) .category-icon,
-    .category-card:nth-child(6) .category-icon {
-      background: #f0edff;
-    }
-
-    .category-card:nth-child(3) .category-icon,
-    .category-card:nth-child(7) .category-icon {
-      background: #fff3df;
-    }
-
-    .category-card:nth-child(4) .category-icon,
-    .category-card:nth-child(8) .category-icon {
-      background: #eaf2ff;
-    }
-
     .category-card h3 {
       margin-bottom: 5px;
       color: var(--navy);
@@ -732,11 +717,6 @@
       color: #087d70;
     }
 
-    .text-action:disabled {
-      cursor: not-allowed;
-      opacity: 0.6;
-    }
-
     .empty-state {
       padding: 48px 24px;
       text-align: center;
@@ -772,10 +752,6 @@
       color: var(--muted);
       font-size: 12px;
       line-height: 1.75;
-    }
-
-    .sidebar-card .button {
-      width: 100%;
     }
 
     .guideline-list {
@@ -1035,11 +1011,6 @@
       overflow-wrap: anywhere;
     }
 
-    .auth-loading {
-      color: var(--muted);
-      font-size: 12px;
-    }
-
     .toast {
       position: fixed;
       right: 20px;
@@ -1072,10 +1043,6 @@
         grid-template-columns: minmax(0, 1fr) 250px;
         gap: 16px;
       }
-
-      .sidebar-card {
-        padding: 18px;
-      }
     }
 
     @media (max-width: 700px) {
@@ -1095,15 +1062,6 @@
         display: none;
       }
 
-      .nav-actions {
-        gap: 6px;
-      }
-
-      .nav-actions .button {
-        padding: 9px 11px;
-        font-size: 12px;
-      }
-
       .hero {
         padding: 52px 0 45px;
       }
@@ -1112,122 +1070,12 @@
         grid-template-columns: 1fr;
       }
 
-      .hero h1 {
-        font-size: clamp(38px, 10vw, 52px);
-        letter-spacing: -1.7px;
-      }
-
-      .hero-copy {
-        font-size: 15px;
-      }
-
-      .hero-card {
-        max-width: 480px;
-      }
-
-      .section {
-        padding: 46px 0;
-      }
-
-      .category-grid {
-        gap: 10px;
-      }
-
-      .category-card {
-        min-height: 150px;
-        padding: 15px;
-      }
-
-      .category-card h3 {
-        font-size: 13px;
-      }
-
-      .community-section {
-        padding: 44px 0;
-      }
-
       .community-layout {
         grid-template-columns: 1fr;
       }
 
       .sidebar {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .feed-header {
-        padding: 18px 16px 0;
-      }
-
-      .feed-title-row h2 {
-        font-size: 20px;
-      }
-
-      .question-card {
-        padding: 19px 16px;
-      }
-
-      .question-card h3 {
-        font-size: 16px;
-      }
-
-      .bottom-cta-inner {
-        align-items: start;
-        flex-direction: column;
-      }
-
-      .footer-inner {
-        align-items: start;
-        flex-direction: column;
-      }
-    }
-
-    @media (max-width: 440px) {
-      .nav-actions #nav-signin {
-        display: none;
-      }
-
-      .category-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .category-card {
-        min-height: 155px;
-      }
-
-      .section-heading {
-        align-items: start;
-        flex-direction: column;
-      }
-
-      .feed-controls {
-        align-items: stretch;
-      }
-
-      .search-wrap {
-        flex-basis: 100%;
-      }
-
-      .select-input {
-        flex: 1;
-        max-width: none;
-      }
-
-      .sidebar {
-        grid-template-columns: 1fr;
-      }
-
-      .modal {
-        padding: 25px 20px;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-
-      *,
-      *::before,
-      *::after {
-        scroll-behavior: auto !important;
-        transition-duration: 0.01ms !important;
       }
     }
   </style>
@@ -1286,10 +1134,6 @@
               Explore discussions
             </a>
           </div>
-
-          <p class="hero-note">
-            For students preparing, studying, or sharing what they've learned.
-          </p>
         </div>
 
         <div class="hero-card" aria-label="Examples of student discussions">
@@ -1302,18 +1146,6 @@
             <span class="tag">Admissions & applications</span>
             <p>What do you wish you'd known before choosing your university?</p>
             <small>Advice from people who've been there</small>
-          </div>
-
-          <div class="mini-question">
-            <span class="tag">Housing & arrival</span>
-            <p>What should I arrange before arriving for my first semester?</p>
-            <small>Practical tips for a smoother start</small>
-          </div>
-
-          <div class="mini-question">
-            <span class="tag">Student life</span>
-            <p>How did you find your people in a new country?</p>
-            <small>Experiences, ideas, and encouragement</small>
           </div>
 
           <div class="hero-card-foot">
@@ -1344,43 +1176,36 @@
             <h3>Admissions & University Choice</h3>
             <p>Applications, offers, and finding the right fit.</p>
           </button>
-
           <button class="category-card" type="button" data-category="Academics & Study Skills">
             <span class="category-icon" aria-hidden="true">📚</span>
             <h3>Academics & Study Skills</h3>
             <p>Classes, study habits, and academic support.</p>
           </button>
-
           <button class="category-card" type="button" data-category="Scholarships & Money">
             <span class="category-icon" aria-hidden="true">💰</span>
             <h3>Scholarships & Money</h3>
             <p>Budgeting, funding, and financial planning.</p>
           </button>
-
           <button class="category-card" type="button" data-category="Housing & Arrival">
             <span class="category-icon" aria-hidden="true">🏡</span>
             <h3>Housing & Arrival</h3>
             <p>Accommodation and getting settled in.</p>
           </button>
-
           <button class="category-card" type="button" data-category="Student Life & Belonging">
             <span class="category-icon" aria-hidden="true">🌍</span>
             <h3>Student Life & Belonging</h3>
             <p>Friendships, culture, and finding your people.</p>
           </button>
-
           <button class="category-card" type="button" data-category="Jobs & Career Development">
             <span class="category-icon" aria-hidden="true">💼</span>
             <h3>Jobs & Career Development</h3>
             <p>Experience, careers, and planning ahead.</p>
           </button>
-
           <button class="category-card" type="button" data-category="Visas, Permits & Official Processes">
             <span class="category-icon" aria-hidden="true">🧭</span>
             <h3>Visas & Official Processes</h3>
             <p>Questions to research with reliable official sources.</p>
           </button>
-
           <button class="category-card" type="button" data-category="Graduate Advice & Real Experiences">
             <span class="category-icon" aria-hidden="true">✨</span>
             <h3>Graduate Advice & Real Experiences</h3>
@@ -1395,7 +1220,7 @@
         <div class="section-heading">
           <div>
             <h2>Community discussions</h2>
-            <p>Explore example questions and see the kinds of conversations Campusly is built for.</p>
+            <p>Explore questions and read or post answers.</p>
           </div>
           <button class="button button-primary" id="ask-question" type="button">
             ＋ Ask a question
@@ -1407,7 +1232,7 @@
             <div class="feed-header">
               <div class="feed-title-row">
                 <h2 id="feed-heading">Explore questions</h2>
-                <span class="pill pill-neutral">Preview feed</span>
+                <span class="pill pill-neutral">Live feed</span>
               </div>
 
               <div class="feed-controls">
@@ -1447,9 +1272,7 @@
             <div class="sidebar-card">
               <h3>New to Campusly?</h3>
               <p>
-                Create an account to start building your student profile.
-                Discussion posting and saved-question syncing can be connected
-                to the database next.
+                Create an account to ask questions, read answers, and share your experiences.
               </p>
               <button class="button button-dark" id="sidebar-join" type="button">
                 Get started →
@@ -1462,28 +1285,7 @@
                 <li><span class="check">✓</span><span>Share experiences respectfully and honestly.</span></li>
                 <li><span class="check">✓</span><span>Be welcoming to people from every background.</span></li>
                 <li><span class="check">✓</span><span>Protect your privacy and other people's privacy.</span></li>
-                <li><span class="check">✓</span><span>Check official sources for immigration and legal processes.</span>
-                </li>
               </ul>
-            </div>
-
-            <div class="sidebar-card">
-              <h3>A community in progress</h3>
-              <p>
-                These are illustrative sample questions, not live community
-                activity. Real discussions will appear after we connect
-                the questions and answers database.
-              </p>
-              <div class="stats-row">
-                <div class="stat-box">
-                  <strong>8</strong>
-                  <span>Topic areas</span>
-                </div>
-                <div class="stat-box">
-                  <strong>1</strong>
-                  <span>Shared goal</span>
-                </div>
-              </div>
             </div>
           </aside>
         </div>
@@ -1545,7 +1347,6 @@
             <label for="auth-password">Password</label>
             <input id="auth-password" name="password" type="password" autocomplete="new-password" minlength="8"
               maxlength="128" placeholder="At least 8 characters" required />
-            <span class="form-hint">Use a password you don't use on other sites.</span>
           </div>
 
           <button class="button button-primary modal-submit" id="auth-submit" type="submit">
@@ -1574,7 +1375,7 @@
     </section>
   </div>
 
-  <!-- Question composer: preview only until the questions database is connected -->
+  <!-- Question composer dialog -->
   <div class="modal-backdrop" id="question-modal" hidden>
     <section class="modal modal-wide" role="dialog" aria-modal="true" aria-labelledby="question-modal-heading">
       <button class="modal-close" id="question-close" type="button" aria-label="Close dialog">×</button>
@@ -1584,14 +1385,13 @@
       </div>
       <h2 id="question-modal-heading">Ask the community</h2>
       <p class="modal-intro">
-        This preview lets you draft a question in your browser. Publishing to
-        the shared community will work after we connect the questions database.
+        Publish a question for other students to answer.
       </p>
 
       <form id="question-form">
         <div class="form-field">
           <label for="question-title">Question title</label>
-          <input id="question-title" type="text" maxlength="160" placeholder="What would you like to know?" required />
+          <input id="question-title" type="text" maxlength="180" placeholder="What would you like to know?" required />
         </div>
 
         <div class="form-field">
@@ -1610,16 +1410,30 @@
         </div>
 
         <div class="form-field">
-          <label for="question-body">More details (optional)</label>
-          <textarea id="question-body" maxlength="3000"
-            placeholder="Add context that might help other students answer..."></textarea>
+          <label for="question-body">More details</label>
+          <textarea id="question-body" maxlength="10000"
+            placeholder="Add context that might help other students answer..." required></textarea>
         </div>
 
         <button class="button button-primary modal-submit" type="submit">
-          Preview my question
+          Publish question
         </button>
       </form>
-      <p class="status-message" id="question-status" role="status" aria-live="polite"></p>
+      <p class="status-message" id="form-status" role="status" aria-live="polite"></p>
+    </section>
+  </div>
+
+  <!-- Question detail & answers modal -->
+  <div class="modal-backdrop" id="detail-modal" hidden>
+    <section class="modal modal-wide" role="dialog" aria-modal="true" aria-labelledby="detail-modal-title">
+      <button class="modal-close" id="detail-close" type="button" aria-label="Close dialog">×</button>
+      <div class="modal-brand">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        Campusly Discussion
+      </div>
+      <div id="detail-content">
+        <!-- Loaded dynamically -->
+      </div>
     </section>
   </div>
 
@@ -1631,17 +1445,6 @@
   <script>
     "use strict";
 
-    /*
-      CAMPUSLY SUPABASE SETUP
-      Replace the two placeholder strings below on your own computer.
-
-      Use:
-      - Your Supabase Project URL
-      - Your Supabase publishable key (or legacy anon key)
-
-      NEVER put your database password, service_role key, or secret API key
-      in this file. Do not commit secret credentials to GitHub.
-    */
     const SUPABASE_URL = "https://esgsanjsqcymyuafeqgd.supabase.co";
     const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_6Xa1YcyrJ8bOI5_uXCTuNQ_LSwtgFuq";
 
@@ -1676,6 +1479,7 @@
 
     const authModal = $("#auth-modal");
     const questionModal = $("#question-modal");
+    const detailModal = $("#detail-modal");
     const authForm = $("#auth-form");
     const authFormView = $("#auth-form-view");
     const authAccountView = $("#auth-account-view");
@@ -1687,7 +1491,6 @@
     const authSwitch = $("#auth-switch");
     const authSwitchLabel = $("#auth-switch-label");
     const authStatus = $("#auth-status");
-    const questionStatus = $("#question-status");
     const questionList = $("#question-list");
     const toast = $("#toast");
 
@@ -1711,17 +1514,17 @@
       "Graduate Advice & Real Experiences"
     ];
 
-    /*
-      These are illustrative sample cards. They are not fetched from Supabase,
-      and their activity counts are not real community statistics.
-    */
+    const questions = [];
 
     async function loadDatabaseQuestions() {
       if (!supabaseClient) return;
 
       const { data, error } = await supabaseClient
         .from("questions")
-        .select("id, title, body, category, created_at, author_id")
+        .select(`
+          id, title, body, category, created_at, author_id,
+          answers ( id )
+        `)
         .order("created_at", { ascending: false })
         .limit(100);
 
@@ -1731,12 +1534,7 @@
         return;
       }
 
-      // Remove the previous database results before refreshing.
-      for (let i = questions.length - 1; i >= 0; i--) {
-        if (questions[i].fromDatabase) {
-          questions.splice(i, 1);
-        }
-      }
+      questions.length = 0;
 
       const liveQuestions = (data || []).map((item) => ({
         id: item.id,
@@ -1749,7 +1547,7 @@
         age: new Date(item.created_at).toLocaleDateString(),
         createdAt: item.created_at,
         authorId: item.author_id,
-        answers: 0,
+        answers: item.answers ? item.answers.length : 0,
         helpful: 0,
         destination: "",
         tags: [],
@@ -1760,129 +1558,6 @@
       questions.push(...liveQuestions);
       renderQuestions();
     }
-
-    const questions = [
-      {
-        id: "sample-1",
-        title: "What do you wish you had known before choosing your university?",
-        body: "I'm comparing a few options and want to understand what student life, support services, and the overall experience are really like beyond the official brochures.",
-        category: categories[0],
-        author: "A student preparing to apply",
-        initials: "A",
-        role: "Prospective student",
-        age: "Sample question",
-        answers: 4,
-        helpful: 12,
-        destination: "University research",
-        tags: ["Choosing a university", "Student experience"],
-        sample: true
-      },
-      {
-        id: "sample-2",
-        title: "How do you build a realistic budget for your first semester?",
-        body: "I'd like to plan for housing, groceries, transport, books, and unexpected expenses. Which costs are easiest to overlook when making a budget?",
-        category: categories[2],
-        author: "A student planning ahead",
-        initials: "M",
-        role: "Prospective student",
-        age: "Sample question",
-        answers: 0,
-        helpful: 5,
-        destination: "Budgeting",
-        tags: ["Budgeting", "Planning"],
-        sample: true
-      },
-      {
-        id: "sample-3",
-        title: "What should I arrange before arriving for my first semester?",
-        body: "I'm putting together a preparation checklist. What should I research early, and what can reasonably wait until after I arrive?",
-        category: categories[3],
-        author: "A new student",
-        initials: "J",
-        role: "Prospective student",
-        age: "Sample question",
-        answers: 3,
-        helpful: 9,
-        destination: "Arrival planning",
-        tags: ["Arrival", "Checklist"],
-        sample: true
-      },
-      {
-        id: "sample-4",
-        title: "How can I find friends and feel at home on campus?",
-        body: "Starting somewhere new can feel overwhelming. What clubs, campus events, or everyday habits helped you meet people and feel connected?",
-        category: categories[4],
-        author: "A student looking to connect",
-        initials: "S",
-        role: "Student life",
-        age: "Sample question",
-        answers: 6,
-        helpful: 18,
-        destination: "Student life",
-        tags: ["Friendship", "Belonging"],
-        sample: true
-      },
-      {
-        id: "sample-5",
-        title: "Which study habits helped you adjust to a new academic system?",
-        body: "I'd love practical ideas for managing assignments, asking for help, and balancing study time with everything else.",
-        category: categories[1],
-        author: "A future university student",
-        initials: "R",
-        role: "Prospective student",
-        age: "Sample question",
-        answers: 0,
-        helpful: 7,
-        destination: "Study skills",
-        tags: ["Academics", "Study habits"],
-        sample: true
-      },
-      {
-        id: "sample-6",
-        title: "Where should I find reliable information about study permits and work rules?",
-        body: "I want to avoid relying on outdated posts or hearsay. Which official government pages should students check and re-check?",
-        category: categories[6],
-        author: "A student researching requirements",
-        initials: "L",
-        role: "Prospective student",
-        age: "Sample question",
-        answers: 2,
-        helpful: 11,
-        destination: "Official information",
-        tags: ["Official sources", "Planning"],
-        sample: true
-      },
-      {
-        id: "sample-7",
-        title: "How can I look for scholarships without missing important requirements?",
-        body: "I'm trying to organize deadlines and eligibility requirements. How do you keep track of opportunities and avoid questionable offers?",
-        category: categories[2],
-        author: "A student researching funding",
-        initials: "N",
-        role: "Prospective student",
-        age: "Sample question",
-        answers: 2,
-        helpful: 8,
-        destination: "Scholarships",
-        tags: ["Scholarships", "Deadlines"],
-        sample: true
-      },
-      {
-        id: "sample-8",
-        title: "What career preparation would you start during your first year?",
-        body: "For students who have already graduated, what helped you explore career options, develop skills, and make useful connections?",
-        category: categories[7],
-        author: "A curious future student",
-        initials: "D",
-        role: "Prospective student",
-        age: "Sample question",
-        answers: 0,
-        helpful: 6,
-        destination: "Career development",
-        tags: ["Career", "Graduate advice"],
-        sample: true
-      }
-    ];
 
     function escapeHTML(value) {
       return String(value).replace(/[&<>"']/g, (character) => ({
@@ -1913,6 +1588,7 @@
       lastFocusedElement = document.activeElement;
       authModal.hidden = modal !== authModal;
       questionModal.hidden = modal !== questionModal;
+      detailModal.hidden = modal !== detailModal;
       document.body.classList.add("modal-open");
 
       const focusTarget = modal.querySelector(
@@ -1923,7 +1599,7 @@
 
     function closeModal(modal) {
       modal.hidden = true;
-      if (authModal.hidden && questionModal.hidden) {
+      if (authModal.hidden && questionModal.hidden && detailModal.hidden) {
         document.body.classList.remove("modal-open");
       }
       if (lastFocusedElement && typeof lastFocusedElement.focus === "function") {
@@ -1940,22 +1616,12 @@
 
     function setAuthMode(mode) {
       authMode = mode === "signin" ? "signin" : "signup";
-
       const signingUp = authMode === "signup";
-      authHeading.textContent = signingUp
-        ? "Join the community"
-        : "Welcome back";
-
-      authIntro.textContent = signingUp
-        ? "Create an account to be part of Campusly."
-        : "Sign in to continue your university journey.";
-
+      authHeading.textContent = signingUp ? "Join the community" : "Welcome back";
+      authIntro.textContent = signingUp ? "Create an account to be part of Campusly." : "Sign in to continue your university journey.";
       authSubmit.textContent = signingUp ? "Create account" : "Sign in";
-      authSwitchLabel.textContent = signingUp
-        ? "Already have an account?"
-        : "New to Campusly?";
+      authSwitchLabel.textContent = signingUp ? "Already have an account?" : "New to Campusly?";
       authSwitch.textContent = signingUp ? "Sign in" : "Create an account";
-
       authPassword.autocomplete = signingUp ? "new-password" : "current-password";
       authForm.reset();
       setStatus(authStatus, "");
@@ -1963,7 +1629,6 @@
 
     function renderAuthUI() {
       const isSignedIn = Boolean(currentUser);
-
       $("#nav-signin").hidden = isSignedIn;
       $("#nav-join").hidden = isSignedIn;
       $("#nav-account").hidden = !isSignedIn;
@@ -1991,21 +1656,13 @@
         currentUser = data.user || null;
         renderAuthUI();
       } catch (error) {
-        console.error("Could not refresh the Campusly session.");
+        console.error("Could not refresh session.");
       }
     }
 
     async function handleAuthSubmit(event) {
       event.preventDefault();
-
-      if (!supabaseClient) {
-        setStatus(
-          authStatus,
-          "Supabase isn't configured yet. Add your Project URL and publishable key in the configuration section of index.html.",
-          "error"
-        );
-        return;
-      }
+      if (!supabaseClient) return;
 
       const email = authEmail.value.trim();
       const password = authPassword.value;
@@ -2019,44 +1676,27 @@
           const { data, error } = await supabaseClient.auth.signUp({
             email,
             password,
-            options: {
-              emailRedirectTo: window.location.origin
-            }
+            options: { emailRedirectTo: window.location.origin }
           });
-
           if (error) throw error;
-
           if (data.session) {
             currentUser = data.user;
             renderAuthUI();
-            setStatus(authStatus, "Your account was created. You're signed in!", "success");
+            setStatus(authStatus, "Account created successfully!", "success");
           } else {
-            setStatus(
-              authStatus,
-              "Account request received. Check your email for a confirmation link before signing in.",
-              "success"
-            );
+            setStatus(authStatus, "Check your email for confirmation link.", "success");
           }
         } else {
-          const { data, error } = await supabaseClient.auth.signInWithPassword({
-            email,
-            password
-          });
-
+          const { data, error } = await supabaseClient.auth.signInWithPassword({ email, password });
           if (error) throw error;
-
           currentUser = data.user;
           renderAuthUI();
-          setStatus(authStatus, "You're signed in!", "success");
+          setStatus(authStatus, "Signed in successfully!", "success");
           showToast("Welcome back to Campusly!");
-
-          setTimeout(() => {
-            if (!authModal.hidden) closeModal(authModal);
-          }, 700);
+          setTimeout(() => closeModal(authModal), 700);
         }
       } catch (error) {
-        // Supabase error messages are shown as text, never inserted as HTML.
-        setStatus(authStatus, error.message || "Authentication failed. Please try again.", "error");
+        setStatus(authStatus, error.message || "Authentication failed.", "error");
       } finally {
         authSubmit.disabled = false;
         authSubmit.textContent = authMode === "signup" ? "Create account" : "Sign in";
@@ -2064,49 +1704,29 @@
     }
 
     async function handleSignOut() {
-      if (!supabaseClient) {
-        showToast("Configure Supabase before signing out.");
-        return;
-      }
-
-      const signoutButton = $("#auth-signout");
-      signoutButton.disabled = true;
-
+      if (!supabaseClient) return;
       try {
-        const { error } = await supabaseClient.auth.signOut();
-        if (error) throw error;
-
+        await supabaseClient.auth.signOut();
         currentUser = null;
         renderAuthUI();
         setAuthMode("signin");
-        setStatus(authStatus, "You've signed out successfully.", "success");
-        showToast("You've signed out.");
+        showToast("Signed out.");
       } catch (error) {
-        setStatus(authStatus, error.message || "Sign-out failed. Please try again.", "error");
-      } finally {
-        signoutButton.disabled = false;
+        showToast("Sign-out failed.");
       }
     }
 
     function updateActiveTabs() {
-      $$(".feed-tab").forEach((button) => {
-        const isActive = button.dataset.tab === activeTab;
-        button.classList.toggle("active", isActive);
-        button.setAttribute("aria-selected", String(isActive));
-      });
-
-      $$(".category-card").forEach((button) => {
-        button.classList.toggle(
-          "active",
-          button.dataset.category === selectedCategory
-        );
+      $$(".feed-tab").forEach((button) => { const isActive = button.dataset.tab === activeTab; button.classList.toggle("active", isActive); button.setAttribute("aria-selected", String(isActive)); });        $$
+(".category-card").forEach((button) => {
+        button.classList.toggle("active", button.dataset.category === selectedCategory);
       });
 
       $("#feed-heading").textContent = selectedCategory || (
         activeTab === "saved" ? "Saved questions" :
-          activeTab === "unanswered" ? "Questions awaiting answers" :
-            activeTab === "latest" ? "Latest questions" :
-              "Explore questions"
+        activeTab === "unanswered" ? "Questions awaiting answers" :
+        activeTab === "latest" ? "Latest questions" :
+        "Explore questions"
       );
     }
 
@@ -2115,44 +1735,28 @@
       const sort = $("#sort-questions").value;
 
       let filtered = questions.filter((question) => {
-        const matchesCategory =
-          !selectedCategory || question.category === selectedCategory;
-
-        const searchableText = [
-          question.title,
-          question.body,
-          question.category,
-          question.author,
-          question.destination,
-          ...(question.tags || [])
-        ].join(" ").toLowerCase();
-
+        const matchesCategory = !selectedCategory || question.category === selectedCategory;
+        const searchableText = [question.title, question.body, question.category].join(" ").toLowerCase();
         const matchesSearch = !search || searchableText.includes(search);
         const matchesSaved = activeTab !== "saved" || savedQuestions.has(question.id);
-        const matchesUnanswered =
-          activeTab !== "unanswered" || question.answers === 0;
+        const matchesUnanswered = activeTab !== "unanswered" || question.answers === 0;
 
         return matchesCategory && matchesSearch && matchesSaved && matchesUnanswered;
       });
 
       if (activeTab === "latest" || sort === "latest") {
-        // Sample cards have no actual creation timestamps; this is a preview order.
         filtered = filtered.slice().reverse();
       } else if (sort === "unanswered" || activeTab === "unanswered") {
         filtered = filtered.slice().sort((a, b) => a.answers - b.answers);
       } else {
-        filtered = filtered.slice().sort((a, b) => {
-          const scoreA = a.helpful + a.answers * 2;
-          const scoreB = b.helpful + b.answers * 2;
-          return scoreB - scoreA;
-        });
+        filtered = filtered.slice().sort((a, b) => b.answers - a.answers);
       }
 
       if (!filtered.length) {
         questionList.innerHTML = `
           <div class="empty-state">
-            <strong>No matching questions yet</strong>
-            Try another search, choose a different topic, or clear your filters.
+            <strong>No matching questions found</strong>
+            Try another search, select a different topic, or ask a new question!
           </div>
         `;
         return;
@@ -2161,24 +1765,16 @@
       questionList.innerHTML = filtered.map((question) => {
         const saved = savedQuestions.has(question.id);
         const helpful = helpfulQuestions.has(question.id);
-        const isDraft = !question.sample && !question.fromDatabase;
         return `
           <article class="question-card">
             <div class="question-labels">
               <span class="pill">${escapeHTML(question.category)}</span>
-              ${question.answers === 0
-            ? '<span class="pill pill-purple">Needs an answer</span>'
-            : '<span class="pill pill-neutral">Discussion</span>'}
-              ${question.fromDatabase
-            ? '<span class="pill">Live community post</span>'
-            : isDraft
-              ? '<span class="pill pill-neutral">Local preview</span>'
-              : '<span class="pill pill-neutral">Example</span>'}
+              ${question.answers === 0 ? '<span class="pill pill-purple">Needs an answer</span>' : '<span class="pill pill-neutral">Discussion</span>'}
             </div>
 
             <div class="question-topline">
               <h3>
-                <a href="#discussions" data-question-title="${escapeHTML(question.id)}">
+                <a href="#" data-question-id="${escapeHTML(question.id)}">
                   ${escapeHTML(question.title)}
                 </a>
               </h3>
@@ -2188,25 +1784,18 @@
 
             <div class="question-meta">
               <span class="person">
-                <span class="person-avatar ${question.initials === "M" || question.initials === "N" ? "purple" : question.initials === "J" || question.initials === "D" ? "orange" : ""}">
-                  ${escapeHTML(question.initials)}
-                </span>
-                ${escapeHTML(question.author)}
+                <span class="person-avatar">C</span>
+                Campusly member
               </span>
-              <span class="meta-dot">•</span>
-              <span>${escapeHTML(question.role)}</span>
               <span class="meta-dot">•</span>
               <span>${escapeHTML(question.age)}</span>
             </div>
 
             <div class="question-actions">
               <button class="text-action" type="button" data-action="answers" data-id="${escapeHTML(question.id)}">
-                ♧ ${question.answers} answers
+                💬 ${question.answers} answers
               </button>
-              <button class="text-action ${helpful ? "selected" : ""}" type="button" data-action="helpful" data-id="${escapeHTML(question.id)}" aria-pressed="${helpful}">
-                ♡ Helpful ${question.helpful + (helpful ? 1 : 0)}
-              </button>
-              <button class="text-action ${saved ? "selected" : ""}" type="button" data-action="save" data-id="${escapeHTML(question.id)}" aria-pressed="${saved}">
+              <button class="text-action ${saved ? "selected" : ""}" type="button" data-action="save" data-id="${escapeHTML(question.id)}">
                 ${saved ? "★ Saved" : "☆ Save"}
               </button>
             </div>
@@ -2215,152 +1804,210 @@
       }).join("");
     }
 
-    function setTab(tab) {
-      activeTab = tab;
-      updateActiveTabs();
-      renderQuestions();
-    }
+    async function openQuestionDetail(questionId) {
+      const question = questions.find(q => q.id === questionId);
+      if (!question) return;
 
-    function openQuestionComposer() {
+      const detailContent = $("#detail-content");
+      detailContent.innerHTML = `
+        <span class="pill">${escapeHTML(question.category)}</span>
+        <h2 id="detail-modal-title" style="margin-top:10px;font-size:22px;color:var(--navy);">${escapeHTML(question.title)}</h2>
+        <p style="color:#68758d;font-size:14px;line-height:1.7;margin-bottom:15px;">${escapeHTML(question.body)}</p>
+        <div class="question-meta" style="margin-bottom:20px;">
+          <span class="person">
+            <span class="person-avatar">C</span>
+            Campusly member
+          </span>
+          <span class="meta-dot">•</span>
+          <span>${escapeHTML(question.age)}</span>
+        </div>
+        <hr style="border:0;border-top:1px solid var(--line);margin:20px 0;">
+        <h3 style="font-family:'Manrope',sans-serif;font-size:18px;color:var(--navy);margin-bottom:15px;">Answers</h3>
+        <div id="answers-list" style="margin-bottom:25px;">Loading answers...</div>
+
+        ${currentUser ? `
+          <form id="answer-form">
+            <h3 style="font-family:'Manrope',sans-serif;font-size:16px;color:var(--navy);margin-bottom:10px;">Write an answer</h3>
+            <div class="form-field">
+              <textarea id="answer-body" maxlength="10000" placeholder="Share your experience, advice, or perspective..." required></textarea>
+            </div>
+            <button class="button button-primary modal-submit" type="submit">Post answer</button>
+            <p class="status-message" id="answer-status" role="status" aria-live="polite"></p>
+          </form>
+        ` : `
+          <div style="padding:15px;background:#f6f8fc;border-radius:12px;text-align:center;font-size:13px;color:var(--muted);">
+            <button class="link-button" id="detail-signin-prompt" type="button">Sign in</button> to post an answer to this question.
+          </div>
+        `}
+      `;
+
+      openModal(detailModal);
+
       if (!currentUser) {
-        openAuth("signup");
-        setStatus(
-          authStatus,
-          "Create an account first. Once your account is ready, you can continue setting up your question.",
-          ""
-        );
-        return;
+        $("#detail-signin-prompt")?.addEventListener("click", () => {
+          closeModal(detailModal);
+          openAuth("signin");
+        });
+      } else {
+        $("#answer-form").addEventListener("submit", async (e) => {
+          e.preventDefault();
+          await handleAnswerSubmit(question.id);
+        });
       }
 
+      await loadAnswersForQuestion(question.id);
+    }
+
+    async function loadAnswersForQuestion(questionId) {
+      const answersList = $("#answers-list");
       if (!supabaseClient) {
-        openAuth("signup");
-        setStatus(
-          authStatus,
-          "Add your Supabase configuration before using account features.",
-          "error"
-        );
+        answersList.innerHTML = `<div style="color:var(--muted);font-size:13px;">Database not connected.</div>`;
         return;
       }
 
-      setStatus(questionStatus, "");
-      $("#question-form").reset();
-      openModal(questionModal);
+      const { data, error } = await supabaseClient
+        .from("answers")
+        .select("id, body, created_at, author_id")
+        .eq("question_id", questionId)
+        .eq("status", "published")
+        .order("created_at", { ascending: true });
+
+      if (error) {
+        answersList.innerHTML = `<div style="color:#9d2b36;font-size:13px;">Could not load answers.</div>`;
+        return;
+      }
+
+      if (!data || data.length === 0) {
+        answersList.innerHTML = `<div style="color:var(--muted);font-size:13px;font-style:italic;">No answers yet. Be the first to help!</div>`;
+        return;
+      }
+
+      answersList.innerHTML = data.map(ans => `
+        <div style="padding:15px;margin-bottom:12px;border:1px solid var(--line);border-radius:12px;background:#fafbfd;">
+          <p style="margin-bottom:10px;color:var(--ink);font-size:13px;line-height:1.7;white-space:pre-wrap;">${escapeHTML(ans.body)}</p>
+          <div class="question-meta">
+            <span class="person">
+              <span class="person-avatar purple">C</span>
+              Campusly member
+            </span>
+            <span class="meta-dot">•</span>
+            <span>${new Date(ans.created_at).toLocaleDateString()}</span>
+          </div>
+        </div>
+      `).join("");
     }
 
-    function renderLocalQuestionPreview(title, body, category) {
-      const newQuestion = {
-        id: "draft-" + Date.now(),
-        title,
-        body: body || "A new community question preview.",
-        category,
-        author: currentUser?.email || "Your local preview",
-        initials: (currentUser?.email || "Y").charAt(0).toUpperCase(),
-        role: "Your draft",
-        age: "Just now",
-        answers: 0,
-        helpful: 0,
-        destination: "",
-        tags: [],
-        sample: false
-      };
+    async function handleAnswerSubmit(questionId) {
+      const answerBody = $("#answer-body");
+      const answerStatus = $("#answer-status");
+      const submitBtn = document.querySelector("#answer-form button[type='submit']");
+      const body = answerBody.value.trim();
+      if (!body) return;
 
-      questions.unshift(newQuestion);
-      activeTab = "all";
-      selectedCategory = "";
-      $("#question-search").value = "";
-      $("#sort-questions").value = "latest";
-      updateActiveTabs();
-      renderQuestions();
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Posting...";
+      setStatus(answerStatus, "Posting your answer...");
+
+      try {
+        const { error } = await supabaseClient
+          .from("answers")
+          .insert({
+            question_id: questionId,
+            author_id: currentUser.id,
+            body: body,
+            status: "published"
+          });
+
+        if (error) throw error;
+
+        setStatus(answerStatus, "Answer posted successfully!", "success");
+        answerBody.value = "";
+        showToast("Your answer was posted!");
+
+        await loadAnswersForQuestion(questionId);
+        await loadDatabaseQuestions();
+      } catch (error) {
+        setStatus(answerStatus, error.message || "Failed to post answer.", "error");
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Post answer";
+      }
     }
 
-    // Main navigation
+    // Event listeners
     ["#nav-join", "#hero-join", "#sidebar-join", "#bottom-join"].forEach((selector) => {
       $(selector).addEventListener("click", () => openAuth("signup"));
     });
 
     $("#nav-signin").addEventListener("click", () => openAuth("signin"));
-    $("#nav-account").addEventListener("click", () => openAuth(currentUser ? "signin" : "signup"));
     $("#auth-close").addEventListener("click", () => closeModal(authModal));
     $("#question-close").addEventListener("click", () => closeModal(questionModal));
+    $("#detail-close").addEventListener("click", () => closeModal(detailModal));
     $("#auth-switch").addEventListener("click", () => {
       setAuthMode(authMode === "signup" ? "signin" : "signup");
     });
     authForm.addEventListener("submit", handleAuthSubmit);
     $("#auth-signout").addEventListener("click", handleSignOut);
 
-    $("#ask-question").addEventListener("click", openQuestionComposer);
+    $("#ask-question").addEventListener("click", () => {
+      if (!currentUser) {
+        openAuth("signup");
+        setStatus(authStatus, "Please sign in to ask a question.");
+        return;
+      }
+      $("#question-form").reset();
+      openModal(questionModal);
+    });
 
+    $("#question-form").addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const status = $("#form-status");
+      const submitButton = $("#question-form button[type='submit']");
 
-$("#question-form").addEventListener("submit", async (event) => {
-  event.preventDefault();
+      if (!currentUser) {
+        status.textContent = "Please sign in before publishing.";
+        return;
+      }
 
-  const status = $("#form-status");
-  const submitButton = $("#question-form button[type='submit']");
+      const title = $("#question-title").value.trim();
+      const category = $("#question-category").value;
+      const body = $("#question-body").value.trim();
 
-  if (!currentUser) {
-    status.textContent = "Please sign in before publishing.";
-    return;
-  }
+      if (title.length < 5 || title.length > 180) {
+        status.textContent = "Your title must be between 5 and 180 characters.";
+        return;
+      }
 
-  const title = $("#question-title").value.trim();
-  const category = $("#question-category").value;
-  const body = $("#question-body").value.trim();
+      submitButton.disabled = true;
+      submitButton.textContent = "Publishing...";
 
-  if (title.length < 5 || title.length > 180) {
-    status.textContent = "Your title must be between 5 and 180 characters.";
-    return;
-  }
+      try {
+        const { error } = await supabaseClient
+          .from("questions")
+          .insert({
+            author_id: currentUser.id,
+            title: title,
+            category: category,
+            body: body
+          });
 
-  if (body.length > 10000) {
-    status.textContent = "Your details must be 10,000 characters or fewer.";
-    return;
-  }
+        if (error) throw error;
 
-  submitButton.disabled = true;
-  submitButton.textContent = "Publishing...";
-
-  try {
-    const { error } = await supabaseClient
-      .from("questions")
-      .insert({
-        author_id: currentUser.id,
-        title: title,
-        category: category,
-        body: body || "No additional details provided."
+        await loadDatabaseQuestions();
+        activeTab = "latest";
+        renderQuestions();
+        closeModal(questionModal);
+        showToast("Your question has been published!");
+        $("#question-form").reset(); } catch (error) { status.textContent = error.message \vert{}\vert{} "Could not publish your question."; } finally { submitButton.disabled = false; submitButton.textContent = "Publish question"; } });      $$(".feed-tab").forEach((button) => {
+      button.addEventListener("click", () => {
+        activeTab = button.dataset.tab;
+        updateActiveTabs();
+        renderQuestions();
       });
-
-    if (error) throw error;
-
-    await loadDatabaseQuestions();
-
-    activeTab = "latest";
-    sort = "latest";
-    renderQuestions();
-    closeModal("ask-modal");
-
-    status.textContent = "";
-    showToast("Your question has been published!");
-    $("#question-form").reset();
-
-  } catch (error) {
-    console.error("Publishing question failed:", error);
-    status.textContent = error.message || "Could not publish your question.";
-  } finally {
-    submitButton.disabled = false;
-    submitButton.textContent = "Publish question";
-  }
-});
-
-
-    // Feed controls
-    $$(".feed-tab").forEach((button) => {
-      button.addEventListener("click", () => setTab(button.dataset.tab));
     });
 
     $("#question-search").addEventListener("input", renderQuestions);
-    $("#sort-questions").addEventListener("change", renderQuestions);
-
-    $$(".category-card").forEach((button) => {
+    $("#sort-questions").addEventListener("change", renderQuestions);      $$(".category-card").forEach((button) => {
       button.addEventListener("click", () => {
         const category = button.dataset.category;
         selectedCategory = selectedCategory === category ? "" : category;
@@ -2382,85 +2029,55 @@ $("#question-form").addEventListener("submit", async (event) => {
 
     questionList.addEventListener("click", (event) => {
       const actionButton = event.target.closest("button[data-action]");
-      const questionLink = event.target.closest("[data-question-title]");
+      const questionLink = event.target.closest("[data-question-id]");
 
       if (questionLink) {
         event.preventDefault();
-        showToast("This is a sample question preview. Individual discussion pages will be added with the database.");
+        openQuestionDetail(questionLink.dataset.questionId);
         return;
       }
 
       if (!actionButton) return;
-
       const { action, id } = actionButton.dataset;
-      const question = questions.find((item) => item.id === id);
-      if (!question) return;
 
       if (action === "save") {
         if (savedQuestions.has(id)) {
           savedQuestions.delete(id);
-          showToast("Question removed from your saved list.");
+          showToast("Question removed from saved list.");
         } else {
           savedQuestions.add(id);
-          showToast("Question saved for this page session.");
-        }
-        renderQuestions();
-      } else if (action === "helpful") {
-        if (helpfulQuestions.has(id)) {
-          helpfulQuestions.delete(id);
-        } else {
-          helpfulQuestions.add(id);
+          showToast("Question saved.");
         }
         renderQuestions();
       } else if (action === "answers") {
-        showToast(
-          question.answers
-            ? "Answer previews aren't connected to the database yet."
-            : "This question is awaiting its first answer."
-        );
+        openQuestionDetail(id);
       }
     });
 
-    // Close dialogs with Escape and by clicking the backdrop.
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape") {
         if (!authModal.hidden) closeModal(authModal);
         if (!questionModal.hidden) closeModal(questionModal);
+        if (!detailModal.hidden) closeModal(detailModal);
       }
     });
 
-    [authModal, questionModal].forEach((modal) => {
+    [authModal, questionModal, detailModal].forEach((modal) => {
       modal.addEventListener("click", (event) => {
         if (event.target === modal) closeModal(modal);
       });
     });
 
-    // Initial rendering
     updateActiveTabs();
-    renderQuestions();
     renderAuthUI();
 
-    if (!supabaseClient) {
-      console.warn(
-        "Campusly is in preview mode. Add your Supabase Project URL and publishable key to enable authentication."
-      );
-    } else {
-      /*
-        Supabase emits auth state changes on sign-in, sign-out, token refresh,
-        and session restoration. Keep the callback lightweight.
-      */
+    if (supabaseClient) {
       supabaseClient.auth.onAuthStateChange((event, session) => {
         currentUser = session?.user || null;
         renderAuthUI();
-
-        if (event === "SIGNED_IN") {
-          setStatus(authStatus, "You're signed in!", "success");
-        } else if (event === "SIGNED_OUT") {
-          setStatus(authStatus, "You've signed out.", "success");
-        }
       });
-
       refreshAuthState();
+      loadDatabaseQuestions();
     }
   </script>
 </body>
